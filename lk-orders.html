@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>X-ONE Личный кабинет панель управления</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230615173131">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<style>
+		.preloader {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 999999;
+		}
+
+		.loaded .preloader {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="preloader">
+			<img width="40" height="40" src="img/2.svg" alt="">
+		</div>
+		<header class="header" data-scroll-show data-scroll="60">
+			<div class="header__top top-header" data-lp>
+				<div class="top-header__container">
+					<div class="top-header__left">
+						<p class="top-header__description">
+							ОФИЦИАЛЬНЫЙ САЙТ
+							<span class="top-header__name">
+								x<span class="top-header__dot">.</span>one
+							</span>
+							- ЭКСПЕРТ В ЗАЩИТЕ ЭКРАНА
+						</p>
+					</div>
+					<div class="top-header__right">
+						<ul class="top-header__menu">
+							<li class="top-header__li">
+								<a href="/dostavka/" class="top-header__link">
+									Доставка
+								</a>
+							</li>
+							<li class="top-header__li">
+								<a href="/garantija/" class="top-header__link">
+									Гарантии & Возврат
+								</a>
+							</li>
+							<li class="top-header__li">
+								<a href="/sertifikaty/" class="top-header__link">
+									Сертификаты
+								</a>
+							</li>
+						</ul>
+						<div class="top-header__socials">
+							<a href="https://instagram.com/xone.europe" class="top-header__inst">
+							</a>
+							<a href="https://www.youtube.com/channel/UCst2_d9QGGDXOLBHq7HwmiQ" class="top-header__yt">
+							</a>
+							<a href="https://vk.com/xone.europe" class="top-header__vk">
+							</a>
+							<a href="https://t.me/xone_europe" class="top-header__tg">
+							</a>
+						</div>
+						<div class="top-headerreg _active">
+							<button class="top-header__reg " data-popside=".popside-sign" data-da=".popside__login,1200">
+								<div class="top-header__user"></div>
+								<span>
+									ЛОГИН / РЕГИСТРАЦИЯ
+								</span>
+							</button>
+							<div class="top-headerreg__menu">
+								<a href="/lk-panel.html" class="top-headerreg__item">
+									Панель управления
+								</a>
+								<a href="/lk-orders.html" class="top-headerreg__item">
+									Заказы
+								</a>
+								<a href="/lk-addresses.html" class="top-headerreg__item">
+									Адреса
+								</a>
+								<a href="/lk-questionnaire.html" class="top-headerreg__item">
+									Анкета
+								</a>
+								<a href="/lk-favorite.html" class="top-headerreg__item">
+									Избранное
+								</a>
+								<a href="#" class="top-headerreg__item">
+									Выйти
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__wrapper" data-lp>
+				<div class="header__container">
+					<div class="header__burger" data-popside=".popside-menu">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<span class="header__burgertxt">
+							МЕНЮ
+						</span>
+					</div>
+					<a href="#" class="header__logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="header__menu menu" data-da=".popside__menu,1200">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a href="#" class="menu__link _active"><span>ГЛАВНАЯ</span></a></li>
+								<li><a href="#" class="menu__link"><span>КАТАЛОГ</span></a></li>
+								<li><a href="#" class="menu__link"><span>НОВОСТИ</span></a></li>
+								<li><a href="#" class="menu__link"><span>О БРЕНДЕ</span></a></li>
+								<li><a href="#" class="menu__link"><span>Контакты</span></a></li>
+								<li><a href="#" class="menu__link"><span>Филиалы</span></a></li>
+								<li><a href="#" class="menu__link"><span>FAQ</span></a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="tel:88007077282" class="header__tel">
+						<span class="header__phone">
+							<img src="img/icons/phone.svg" alt="">
+						</span>
+						<span>
+							8 (800) 707-72-82
+						</span>
+						<span class="header__tipy">
+							ТЕХПОДДЕРЖКА
+						</span>
+					</a>
+					<button class="header__cooperation" data-popside=".popside-cooperate">
+						СОТРУДНИЧЕСТВО
+					</button>
+					<div class="header__btns">
+						<a href="#" class="header__favoritelink">
+							<div class="header__favorite">
+								<span>0</span>
+							</div>
+						</a>
+						<div class="header__search search-header">
+							<button class="search-header__btn"></button>
+							<form role="search" method="GET" class="search-header__form" action="https://x-one.pro/">
+								<input type="text" class="s" placeholder="Поиск" value="" name="s" aria-label="Поиск" title="Поиск">
+								<button type="submit" class="search-header__submit">
+									поиск
+								</button>
+							</form>
+						</div>
+						<button class="header__search-mob" data-popside=".popside-menu"></button>
+						<a href="#" class="header__cart cart-header" data-popside=".popside-cart">
+							<div class="cart-header__icon"></div>
+							<div class="cart-header__block">
+								<div class="cart-header__price">
+									<span>
+										0 ₽
+									</span>
+								</div>
+								<div class="cart-header__quantity">
+									<span>
+										0 товаров
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="header__cartmoblink" data-popside=".popside-cart">
+							<div class="header__cartmob">
+								<span>0</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page lk-page">
+			<div class="lk-page__top page-top">
+				<div class="page-top__container">
+					<h1 class="page-top__title">
+						Мой аккаунт
+					</h1>
+					<div class="page-top__breadcrumbs breadcrumbs">
+						<a href="https://x-one.pro/" class="breadcrumbs__link">Главная</a> <span class="breadcrumbs__delimeter">»</span> <span class="breadcrumbs__current">Мой
+							аккаунт</span>
+					</div>
+				</div>
+			</div>
+			<div class="lk-page__body _page-body">
+				<div class="lk-page__container">
+					<div class="lk-page__sidebar sidebar-lk">
+						<h3 class="sidebar-lk__title">
+							МОЙ АККАУНТ
+						</h3>
+						<div class="sidebar-lk__items">
+							<a href="#" class="sidebar-lk__item">
+								Панель управления
+							</a>
+							<a href="#" class="sidebar-lk__item _active">
+								Заказы
+							</a>
+							<a href="#" class="sidebar-lk__item">
+								Адреса
+							</a>
+							<a href="#" class="sidebar-lk__item">
+								Анкета
+							</a>
+							<a href="#" class="sidebar-lk__item">
+								Избранное
+							</a>
+							<a href="#" class="sidebar-lk__item">
+								Выйти
+							</a>
+						</div>
+					</div>
+					<div class="lk-page__wrapper lk-orders">
+						<div class="lk-orders__info">
+							<span></span>
+							<p>
+								<a href="#">
+									Просмотр товаров
+								</a>
+								Заказов ещё не создано.
+							</p>
+						</div>
+						<div class="lk-page__items">
+							<div class="lk-page__item">
+								<button class="lk-page__del">
+									<span></span>
+									<p>
+										Удалить
+									</p>
+								</button>
+								<div class="item-catalog">
+									<div class="item-catalog__hidicons hidicons">
+										<a href="#" class="hidicons__view" data-tippy-content="Быстрый просмотр" data-popside=".popside-quickview">
+										</a>
+									</div>
+									<a href="#" class="item-catalog__imgs">
+										<div class="item-catalog__img">
+											<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+										</div>
+										<div class="item-catalog__imghid">
+											<picture><source srcset="img/catalog/1h.webp" type="image/webp"><img src="img/catalog/1h.jpg" alt=""></picture>
+										</div>
+									</a>
+									<a href="#" class="item-catalog__title">
+										Непробиваемая броня телефона iPhone 14/13/13 Pro защитная противоударная бронепленка
+										X-ONE Extreme Shock Eliminator 4rd-generation
+									</a>
+									<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+										<span style="width:90%">
+											Оценка
+											<strong class="item-catalog__rating">4.50</strong>
+											из 5
+										</span>
+									</div>
+									<div class="item-catalog__price">
+										1900 ₽
+									</div>
+									<div class="item-catalog__bottom">
+										<div class="item-catalog__qty quantity">
+											<button class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input type="number" value="1">
+											</div>
+											<button class="quantity__button quantity__button_plus"></button>
+										</div>
+										<a href="#" class="item-catalog__tocart tocart-btn">
+											<span class="tocart-btn__txt">В корзину</span>
+											<span class="tocart-btn__cart"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="lk-page__item">
+								<button class="lk-page__del">
+									<span></span>
+									<p>
+										Удалить
+									</p>
+								</button>
+								<div class="item-catalog">
+									<div class="item-catalog__hidicons hidicons">
+										<a href="#" class="hidicons__view" data-tippy-content="Быстрый просмотр" data-popside=".popside-quickview">
+										</a>
+									</div>
+									<a href="#" class="item-catalog__imgs">
+										<div class="item-catalog__img">
+											<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+										</div>
+										<div class="item-catalog__imghid">
+											<picture><source srcset="img/catalog/1h.webp" type="image/webp"><img src="img/catalog/1h.jpg" alt=""></picture>
+										</div>
+									</a>
+									<a href="#" class="item-catalog__title">
+										Непробиваемая броня телефона iPhone 14/13/13 Pro защитная противоударная бронепленка
+										X-ONE Extreme Shock Eliminator 4rd-generation
+									</a>
+									<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+										<span style="width:90%">
+											Оценка
+											<strong class="item-catalog__rating">4.50</strong>
+											из 5
+										</span>
+									</div>
+									<div class="item-catalog__price">
+										1900 ₽
+									</div>
+									<div class="item-catalog__bottom">
+										<div class="item-catalog__qty quantity">
+											<button class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input type="number" value="1">
+											</div>
+											<button class="quantity__button quantity__button_plus"></button>
+										</div>
+										<a href="#" class="item-catalog__tocart tocart-btn">
+											<span class="tocart-btn__txt">В корзину</span>
+											<span class="tocart-btn__cart"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="lk-page__item">
+								<button class="lk-page__del">
+									<span></span>
+									<p>
+										Удалить
+									</p>
+								</button>
+								<div class="item-catalog">
+									<div class="item-catalog__hidicons hidicons">
+										<a href="#" class="hidicons__view" data-tippy-content="Быстрый просмотр" data-popside=".popside-quickview">
+										</a>
+									</div>
+									<a href="#" class="item-catalog__imgs">
+										<div class="item-catalog__img">
+											<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+										</div>
+										<div class="item-catalog__imghid">
+											<picture><source srcset="img/catalog/1h.webp" type="image/webp"><img src="img/catalog/1h.jpg" alt=""></picture>
+										</div>
+									</a>
+									<a href="#" class="item-catalog__title">
+										Непробиваемая броня телефона iPhone 14/13/13 Pro защитная противоударная бронепленка
+										X-ONE Extreme Shock Eliminator 4rd-generation
+									</a>
+									<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+										<span style="width:90%">
+											Оценка
+											<strong class="item-catalog__rating">4.50</strong>
+											из 5
+										</span>
+									</div>
+									<div class="item-catalog__price">
+										1900 ₽
+									</div>
+									<div class="item-catalog__bottom">
+										<div class="item-catalog__qty quantity">
+											<button class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input type="number" value="1">
+											</div>
+											<button class="quantity__button quantity__button_plus"></button>
+										</div>
+										<a href="#" class="item-catalog__tocart tocart-btn">
+											<span class="tocart-btn__txt">В корзину</span>
+											<span class="tocart-btn__cart"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="lk-page__item">
+								<button class="lk-page__del">
+									<span></span>
+									<p>
+										Удалить
+									</p>
+								</button>
+								<div class="item-catalog">
+									<div class="item-catalog__hidicons hidicons">
+										<a href="#" class="hidicons__view" data-tippy-content="Быстрый просмотр" data-popside=".popside-quickview">
+										</a>
+									</div>
+									<a href="#" class="item-catalog__imgs">
+										<div class="item-catalog__img">
+											<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+										</div>
+										<div class="item-catalog__imghid">
+											<picture><source srcset="img/catalog/1h.webp" type="image/webp"><img src="img/catalog/1h.jpg" alt=""></picture>
+										</div>
+									</a>
+									<a href="#" class="item-catalog__title">
+										Непробиваемая броня телефона iPhone 14/13/13 Pro защитная противоударная бронепленка
+										X-ONE Extreme Shock Eliminator 4rd-generation
+									</a>
+									<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+										<span style="width:90%">
+											Оценка
+											<strong class="item-catalog__rating">4.50</strong>
+											из 5
+										</span>
+									</div>
+									<div class="item-catalog__price">
+										1900 ₽
+									</div>
+									<div class="item-catalog__bottom">
+										<div class="item-catalog__qty quantity">
+											<button class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input type="number" value="1">
+											</div>
+											<button class="quantity__button quantity__button_plus"></button>
+										</div>
+										<a href="#" class="item-catalog__tocart tocart-btn">
+											<span class="tocart-btn__txt">В корзину</span>
+											<span class="tocart-btn__cart"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="lk-page__item">
+								<button class="lk-page__del">
+									<span></span>
+									<p>
+										Удалить
+									</p>
+								</button>
+								<div class="item-catalog">
+									<div class="item-catalog__hidicons hidicons">
+										<a href="#" class="hidicons__view" data-tippy-content="Быстрый просмотр" data-popside=".popside-quickview">
+										</a>
+									</div>
+									<a href="#" class="item-catalog__imgs">
+										<div class="item-catalog__img">
+											<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+										</div>
+										<div class="item-catalog__imghid">
+											<picture><source srcset="img/catalog/1h.webp" type="image/webp"><img src="img/catalog/1h.jpg" alt=""></picture>
+										</div>
+									</a>
+									<a href="#" class="item-catalog__title">
+										Непробиваемая броня телефона iPhone 14/13/13 Pro защитная противоударная бронепленка
+										X-ONE Extreme Shock Eliminator 4rd-generation
+									</a>
+									<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+										<span style="width:90%">
+											Оценка
+											<strong class="item-catalog__rating">4.50</strong>
+											из 5
+										</span>
+									</div>
+									<div class="item-catalog__price">
+										1900 ₽
+									</div>
+									<div class="item-catalog__bottom">
+										<div class="item-catalog__qty quantity">
+											<button class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input type="number" value="1">
+											</div>
+											<button class="quantity__button quantity__button_plus"></button>
+										</div>
+										<a href="#" class="item-catalog__tocart tocart-btn">
+											<span class="tocart-btn__txt">В корзину</span>
+											<span class="tocart-btn__cart"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="lk-page__item">
+								<button class="lk-page__del">
+									<span></span>
+									<p>
+										Удалить
+									</p>
+								</button>
+								<div class="item-catalog">
+									<div class="item-catalog__hidicons hidicons">
+										<a href="#" class="hidicons__view" data-tippy-content="Быстрый просмотр" data-popside=".popside-quickview">
+										</a>
+									</div>
+									<a href="#" class="item-catalog__imgs">
+										<div class="item-catalog__img">
+											<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+										</div>
+										<div class="item-catalog__imghid">
+											<picture><source srcset="img/catalog/1h.webp" type="image/webp"><img src="img/catalog/1h.jpg" alt=""></picture>
+										</div>
+									</a>
+									<a href="#" class="item-catalog__title">
+										Непробиваемая броня телефона iPhone 14/13/13 Pro защитная противоударная бронепленка
+										X-ONE Extreme Shock Eliminator 4rd-generation
+									</a>
+									<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+										<span style="width:90%">
+											Оценка
+											<strong class="item-catalog__rating">4.50</strong>
+											из 5
+										</span>
+									</div>
+									<div class="item-catalog__price">
+										1900 ₽
+									</div>
+									<div class="item-catalog__bottom">
+										<div class="item-catalog__qty quantity">
+											<button class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input type="number" value="1">
+											</div>
+											<button class="quantity__button quantity__button_plus"></button>
+										</div>
+										<a href="#" class="item-catalog__tocart tocart-btn">
+											<span class="tocart-btn__txt">В корзину</span>
+											<span class="tocart-btn__cart"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="lk-page__item">
+								<button class="lk-page__del">
+									<span></span>
+									<p>
+										Удалить
+									</p>
+								</button>
+								<div class="item-catalog">
+									<div class="item-catalog__hidicons hidicons">
+										<a href="#" class="hidicons__view" data-tippy-content="Быстрый просмотр" data-popside=".popside-quickview">
+										</a>
+									</div>
+									<a href="#" class="item-catalog__imgs">
+										<div class="item-catalog__img">
+											<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+										</div>
+										<div class="item-catalog__imghid">
+											<picture><source srcset="img/catalog/1h.webp" type="image/webp"><img src="img/catalog/1h.jpg" alt=""></picture>
+										</div>
+									</a>
+									<a href="#" class="item-catalog__title">
+										Непробиваемая броня телефона iPhone 14/13/13 Pro защитная противоударная бронепленка
+										X-ONE Extreme Shock Eliminator 4rd-generation
+									</a>
+									<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+										<span style="width:90%">
+											Оценка
+											<strong class="item-catalog__rating">4.50</strong>
+											из 5
+										</span>
+									</div>
+									<div class="item-catalog__price">
+										1900 ₽
+									</div>
+									<div class="item-catalog__bottom">
+										<div class="item-catalog__qty quantity">
+											<button class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input type="number" value="1">
+											</div>
+											<button class="quantity__button quantity__button_plus"></button>
+										</div>
+										<a href="#" class="item-catalog__tocart tocart-btn">
+											<span class="tocart-btn__txt">В корзину</span>
+											<span class="tocart-btn__cart"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<button class="scrolltotop" data-goto=".header"></button>
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__item">
+						<div class="footer__logo">
+							<img src="img/logo.svg" alt="">
+						</div>
+						<p class="footer__text">
+							Защитные бронепленки, противоударные стекла и чехлы, зарядные кабели, адаптеры блоки питания для
+							смартфонов, большой выбор, быстрая доставка, гарантия
+						</p>
+						<div class="footer-contacts">
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/location-dot-white.svg" width="18" height="18">
+								</div>
+								<span>Москва, Научный проезд 17</span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/phone-white.svg" width="18" height="18">
+								</div>
+								<span>Телефон:<a href="tel:88007077282">8(800)707-72-82</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/at-white.svg" width="18" height="18">
+								</div>
+								<span>Email: <a href="mailto:support@x-one.pro">shop@x-one.pro</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/telegram-white.svg" width="18" height="18">
+								</div>
+								<span>Telegram: <a target="_blank" href="https://t.me/xone_europe" rel="noopener">xone_europe</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/vk-icon.svg" width="18" height="18">
+								</div>
+								<span>ВКонтакте: <a target="_blank" href="https://vk.com/xone.europe" rel="noopener">xone.europe</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/instagram-white.svg" width="18" height="18">
+								</div>
+								<span>Instagram: <a target="_blank" href="https://instagram.com/xone.europe" rel="noopener">xone.europe</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/youtube-white.svg" width="18" height="18">
+								</div>
+								<span>YouTube: <a target="_blank" href="https://www.youtube.com/channel/UCst2_d9QGGDXOLBHq7HwmiQ" rel="noopener"> <span class="brandtxt">X-ONE</span> эксперт в защите экрана</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item footmarket">
+						<h4 class="footmarket__title">
+							wildberries
+						</h4>
+						<div class="footmarket__img">
+							<picture><source srcset="img/footer/wildberries.webp" type="image/webp"><img src="img/footer/wildberries.png" alt=""></picture>
+						</div>
+						<p class="footmarket__text">
+							Полный ассортимент товаров <span class="brandtxt">X-ONE</span> представлен в каталоге нашего
+							магазина на маркетплейсе WILDBERRIES
+						</p>
+						<a href="#" class="footmarket__link footmarket__link--wildberries">
+							<svg class="wd-icon e-font-icon-svg e-fas-shopping-cart" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+								<path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+								</path>
+							</svg>
+							<span>
+								wildberries
+							</span>
+						</a>
+					</div>
+					<div class="footer__item footmarket">
+						<h4 class="footmarket__title">
+							ozon
+						</h4>
+						<div class="footmarket__img">
+							<picture><source srcset="img/footer/ozon.webp" type="image/webp"><img src="img/footer/ozon.jpg" alt=""></picture>
+						</div>
+						<p class="footmarket__text">
+							Полный ассортимент товаров <span class="brandtxt">X-ONE</span> представлен в каталоге нашего
+							магазина на маркетплейсе OZON
+						</p>
+						<a href="#" class="footmarket__link footmarket__link--ozon">
+							<svg class="wd-icon e-font-icon-svg e-fas-shopping-cart" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+								<path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+								</path>
+							</svg>
+							<span>
+								ozon
+							</span>
+						</a>
+					</div>
+					<div class="footer__item footmarket">
+						<h4 class="footmarket__title">
+							Яндекс Маркет
+						</h4>
+						<div class="footmarket__img">
+							<picture><source srcset="img/footer/yandex.webp" type="image/webp"><img src="img/footer/yandex.jpg" alt=""></picture>
+						</div>
+						<p class="footmarket__text">
+							Полный ассортимент товаров <span class="brandtxt">X-ONE</span> представлен в каталоге нашего
+							магазина на маркетплейсе Яндекс Маркет
+						</p>
+						<a href="#" class="footmarket__link footmarket__link--yandex">
+							<svg class="wd-icon e-font-icon-svg e-fas-shopping-cart" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+								<path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+								</path>
+							</svg>
+							<span>
+								Маркет
+							</span>
+						</a>
+					</div>
+					<div class="footer__item">
+						<ul class="footer__ul">
+							<li>
+								<a href="#">
+									Инструкции по установке
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Наши филиалы
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Наши партнёры
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Полезные статьи
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Карта сайта
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="footer__link">
+							Сотрудничество
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__left">
+						<p>
+							<a href="https://x-one.pro" class="bottom-footer__link">
+								<span class="bottom-footer__name">
+									x<span class="bottom-footer__dot">.</span>one
+								</span>
+								<span class="reserved">®</span>
+							</a>
+							- товарный знак охраняется на территории РФ и СНГ. Все права и данные защищены.
+						</p>
+						<p>
+							При использовании материалов сайта, ссылка на сайт обязательна.
+						</p>
+					</div>
+					<div class="bottom-footer__right">
+						<p>
+							ОГРН: 318272400062860 ИНН: 270604727582
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<img src="img//icons/close.svg" alt="close">
+			</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<!-- ========================= SIGN-IN =========================== -->
+
+	<div class="popside popside-sign">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__top">
+					<h3 class="popside__title">
+						Вход
+					</h3>
+					<button class="popside__close" data-close>
+						<img src="img/icons/close.svg" alt="close">
+						<span>закрыть</span>
+					</button>
+				</div>
+				<form data-dev method="POST" class="form popside-form" action="sendmail.php">
+					<div class="form__input popside-form__input">
+						<label for="popside-login">
+							Имя пользователя или Email
+							<span>*</span>
+						</label>
+						<input id="popside-login" data-required type="text" name="login" autocomplete="on" placeholder="" data-error="Введите логин">
+					</div>
+					<div class="form__input popside-form__input">
+						<label for="popside-password">
+							Пароль
+							<span>*</span>
+						</label>
+						<input id="popside-password" data-required type="password" name="password" autocomplete="off" placeholder="" data-error="Введите пароль">
+					</div>
+					<button type="submit" class="form__btn popside-form__btn popside-form__btn--sign _btn">
+						Войти
+					</button>
+					<div class="popside-sign__row">
+						<div class="popside-form__check">
+							<input type="checkbox" class="popside-form__checkbox form__checkbox" id="popside-sign__checkbox" />
+							<label for="popside-sign__checkbox" class="popside-form__checklabel form__checklabel">
+								Запомнить меня
+							</label>
+						</div>
+						<button class="popside-sign__forgot" data-popside=".popside-forgot">Забыли пароль?</button>
+					</div>
+					<div class="popside-form__create">
+						<div class="popside-form__user"></div>
+						<p class="popside-form__noaccaunt">
+							Нет аккаунта?
+						</p>
+						<a href="#" class="popside-form__btnsecond">
+							Создать аккаунт
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- =================== FORGOT ================================== -->
+
+	<div class="popside popside-menu">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__items">
+					<div class="popside__search">
+						<form role="search" method="GET" class="search-popside__form" action="https://x-one.pro/">
+							<input data-no-focus-classes type="text" class="s" placeholder="Поиск" value="" name="s" aria-label="Поиск" autocomplete="off" title="Поиск">
+							<button type="submit" class="search-popside__submit">
+								поиск
+							</button>
+						</form>
+					</div>
+					<div class="popside__menu"></div>
+					<button class="popside__cooperate" data-popside=".popside-cooperate">СОТРУДНИЧЕСТВО</button>
+					<a href="#" class="popside__favorite"><span class="popside__favicon"></span>избранное</a>
+					<div class="popside__login"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- cooperate -->
+
+	<div class="popside popside-cooperate">
+		<button class="popside__close" data-close>
+			<img src="img/icons/close-white.svg" alt="close">
+		</button>
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__coopbody coopbody">
+					<h3 class="coopbody__title">
+						Выберите тип сотрудничества
+					</h3>
+					<div class="coopbody__items">
+						<a href="#" class="coopbody__item">
+							ФРАНШИЗА
+						</a>
+						<a href="#" class="coopbody__item">
+							ОПТ
+						</a>
+						<a href="#" class="coopbody__item">
+							ПО РЕКЛАМЕ
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- =================== catmenu ================================== -->
+
+	<div class="popside popside-catmenu">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<button class="popside__close" data-close>
+					<img src="img/icons/close.svg" alt="close">
+					<span>закрыть</span>
+				</button>
+				<div class="popside__items popside-catmenu__items">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ============================ fast view ======================================== -->
+
+	<div class="popside popside-quickview">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<button class="popside__close" data-close>
+					<img src="img/icons/close.svg" alt="close">
+				</button>
+				<div class="popside-quickview__body">
+					<div class="popside-quickview__imgs">
+						<button type="button" class="popside-quickview__btn-slider popside-quickview__btn-prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+								<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#ff0404" opacity="1" fill-rule="evenodd" />
+							</svg>
+						</button>
+						<div class="popside-quickview__slider swiper">
+							<div class="popside-quickview__wrapper swiper-wrapper">
+								<div class="popside-quickview__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/mob/1.webp" type="image/webp"><img src="img/main/main-slider/mob/1.jpg" alt=""></picture>
+								</div>
+								<div class="popside-quickview__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/mob/2.webp" type="image/webp"><img src="img/main/main-slider/mob/2.jpg" alt=""></picture>
+								</div>
+								<div class="popside-quickview__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/mob/3.webp" type="image/webp"><img src="img/main/main-slider/mob/3.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="popside-quickview__btn-slider popside-quickview__btn-next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+								<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#ff0404" opacity="1" fill-rule="evenodd" />
+							</svg>
+						</button>
+						<a href="#" class="popside-quickview__detailed">
+							Подробнее о товаре
+						</a>
+					</div>
+					<div class="popside-quickview__indicators">
+						<a href="#" class="popside-quickview__title">
+							Чехол защитный противоударный для iPhone 12/12 Pro X-ONE DropGuard PRO с текстурированным
+							прозрачным корпусом пепельного оттенка
+						</a>
+						<div class="popside-quickview__estimation">
+							<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+								<span style="width:90%">
+									Оценка
+									<strong class="item-catalog__rating">4.50</strong>
+									из 5
+								</span>
+							</div>
+							<p class="popside-quickview__reviewscount">
+								(<span>3</span> отзыва клиентов)
+							</p>
+						</div>
+						<div class="popside-quickview__price">
+							2800 ₽
+						</div>
+						<div class="item-catalog__bottom">
+							<div class="item-catalog__qty quantity">
+								<button class="quantity__button quantity__button_minus"></button>
+								<div class="quantity__input">
+									<input type="number" value="1">
+								</div>
+								<button class="quantity__button quantity__button_plus"></button>
+							</div>
+							<a href="#" class="item-catalog__tocart tocart-btn">
+								<span class="tocart-btn__txt">В корзину</span>
+								<span class="tocart-btn__cart"></span>
+							</a>
+						</div>
+						<div class="popside-quickview__description">
+							<p>
+								X-ONE эксперт в защите экрана — аксессуары премиум класса.
+							</p>
+							<p>
+
+								Чехол противоударный X-ONE DropGuard PRO с текстурированным прозрачным корпусом
+								изготовленный из материалов премиум класса термопластичного полиуретана и поликарбоната
+								импортируемых из Японии.
+							</p>
+							<p>
+
+								Уникальные защитные свойства, материалы и технологии X-ONE:
+							</p>
+							<p>
+
+								Edge Guard — специальные выступы по краям экрана и камеры, не позволяют смартфону упасть
+								задев край экрана при соприкосновении с плоской поверхностью и защищают от 70% случаев
+								повреждений, а пропорции ширины, высоты и веса направляют инерцию падений на место выступа.
+							</p>
+							<p>
+
+								DNA- воздушные отсеки с фирменной конструкцией на углах, эффективно поглощают и рассеивают
+								силу удара при падении с высоты до 3-х метров, более, чем на 98%.
+							</p>
+							<p>
+
+								Nut Matrix Guard технология ударопоглощающей структуры, гасит 90% силы удара по корпусу и
+								равномерно ее распределяет — защищает матрицу, шлейфы и соединения от микроразрывов и
+								сотрясений.
+							</p>
+							<p>
+
+								Dot Matrix — позволяет наслаждаться оригинальной красотой драгоценного смартфона без
+								пожелтения задней панели. Благодаря полимерным премиум материалам корпус сверх прочный, но
+								при этом легкий и гибкий.
+							</p>
+						</div>
+						<div class="popside-quickview__compl">
+							<span>Комплектация: </span>
+							<p> Чехол | Фирменная упаковка.</p>
+						</div>
+						<div class="popside-quickview__stock">
+							<span></span>
+							144 в наличии
+						</div>
+						<div class="item-catalog__bottom">
+							<div class="item-catalog__qty quantity">
+								<button class="quantity__button quantity__button_minus"></button>
+								<div class="quantity__input">
+									<input type="number" value="1">
+								</div>
+								<button class="quantity__button quantity__button_plus"></button>
+							</div>
+							<a href="#" class="item-catalog__tocart tocart-btn">
+								<span class="tocart-btn__txt">В корзину</span>
+								<span class="tocart-btn__cart"></span>
+							</a>
+						</div>
+						<div class="popside-quickview__bottom">
+							<div class="popside-quickview__sku">
+								<span>
+									Артикул:
+								</span>
+								<a href="#">
+									102DGPIP023
+								</a>
+							</div>
+							<div class="popside-quickview__cat">
+								<span>
+									Категория:
+								</span>
+								<a href="#">
+									DropGuard PRO
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ============================ popside cart ======================================== -->
+
+	<div class="popside popside-cart">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__top">
+					<h3 class="popside__title">
+						КОРЗИНА
+					</h3>
+					<button class="popside__close" data-close>
+						<img src="img/icons/close.svg" alt="close">
+						<span>закрыть</span>
+					</button>
+				</div>
+				<div class="popside-cart__items overflow-scroll">
+					<div class="popside-cart__item">
+						<button class="popside-cart__del">
+						</button>
+						<a href="#" class="popside-cart__link">
+							<div class="popside-cart__img">
+								<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+							</div>
+							<div class="popside-cart__info">
+								<p class="popside-cart__name">
+									Непробиваемая броня телефона iPhone 12/12 Pro защитная противоударная бронепленка X-ONE
+									Extreme Shock Eliminator 4rd-generation
+								</p>
+								<div class="popside-cart__quantity">
+									<div class="popside-cart__count">
+										2
+									</div>
+									<span>
+										×
+									</span>
+									<div class="popside-cart__price">
+										2300 ₽
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="popside-cart__bottom">
+					<div class="popside-cart__subtotal">
+						<b>
+							ПОДЫТОГ:
+						</b>
+						<span>
+							6900 ₽
+						</span>
+					</div>
+					<a href="#" class="popside-cart__tocart">
+						Просмотр корзины
+					</a>
+					<a href="#" class="popside-cart__toorder">
+						Оформление заказа
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230615173131"></script>
+</body>
+
+</html>

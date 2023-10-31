@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>X-ONE</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230615173131">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<style>
+		.preloader {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 999999;
+		}
+
+		.loaded .preloader {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="preloader">
+			<img width="40" height="40" src="img/2.svg" alt="">
+		</div>
+		<header class="header" data-scroll-show data-scroll="60">
+			<div class="header__top top-header" data-lp>
+				<div class="top-header__container">
+					<div class="top-header__left">
+						<p class="top-header__description">
+							ОФИЦИАЛЬНЫЙ САЙТ
+							<span class="top-header__name">
+								x<span class="top-header__dot">.</span>one
+							</span>
+							- ЭКСПЕРТ В ЗАЩИТЕ ЭКРАНА
+						</p>
+					</div>
+					<div class="top-header__right">
+						<ul class="top-header__menu">
+							<li class="top-header__li">
+								<a href="/dostavka/" class="top-header__link">
+									Доставка
+								</a>
+							</li>
+							<li class="top-header__li">
+								<a href="/garantija/" class="top-header__link">
+									Гарантии & Возврат
+								</a>
+							</li>
+							<li class="top-header__li">
+								<a href="/sertifikaty/" class="top-header__link">
+									Сертификаты
+								</a>
+							</li>
+						</ul>
+						<div class="top-header__socials">
+							<a href="https://instagram.com/xone.europe" class="top-header__inst">
+							</a>
+							<a href="https://www.youtube.com/channel/UCst2_d9QGGDXOLBHq7HwmiQ" class="top-header__yt">
+							</a>
+							<a href="https://vk.com/xone.europe" class="top-header__vk">
+							</a>
+							<a href="https://t.me/xone_europe" class="top-header__tg">
+							</a>
+						</div>
+						<div class="top-headerreg _active">
+							<button class="top-header__reg " data-popside=".popside-sign" data-da=".popside__login,1200">
+								<div class="top-header__user"></div>
+								<span>
+									ЛОГИН / РЕГИСТРАЦИЯ
+								</span>
+							</button>
+							<div class="top-headerreg__menu">
+								<a href="/lk-panel.html" class="top-headerreg__item">
+									Панель управления
+								</a>
+								<a href="/lk-orders.html" class="top-headerreg__item">
+									Заказы
+								</a>
+								<a href="/lk-addresses.html" class="top-headerreg__item">
+									Адреса
+								</a>
+								<a href="/lk-questionnaire.html" class="top-headerreg__item">
+									Анкета
+								</a>
+								<a href="/lk-favorite.html" class="top-headerreg__item">
+									Избранное
+								</a>
+								<a href="#" class="top-headerreg__item">
+									Выйти
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__wrapper" data-lp>
+				<div class="header__container">
+					<div class="header__burger" data-popside=".popside-menu">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<span class="header__burgertxt">
+							МЕНЮ
+						</span>
+					</div>
+					<a href="#" class="header__logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="header__menu menu" data-da=".popside__menu,1200">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li><a href="#" class="menu__link _active"><span>ГЛАВНАЯ</span></a></li>
+								<li><a href="#" class="menu__link"><span>КАТАЛОГ</span></a></li>
+								<li><a href="#" class="menu__link"><span>НОВОСТИ</span></a></li>
+								<li><a href="#" class="menu__link"><span>О БРЕНДЕ</span></a></li>
+								<li><a href="#" class="menu__link"><span>Контакты</span></a></li>
+								<li><a href="#" class="menu__link"><span>Филиалы</span></a></li>
+								<li><a href="#" class="menu__link"><span>FAQ</span></a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="tel:88007077282" class="header__tel">
+						<span class="header__phone">
+							<img src="img/icons/phone.svg" alt="">
+						</span>
+						<span>
+							8 (800) 707-72-82
+						</span>
+						<span class="header__tipy">
+							ТЕХПОДДЕРЖКА
+						</span>
+					</a>
+					<button class="header__cooperation" data-popside=".popside-cooperate">
+						СОТРУДНИЧЕСТВО
+					</button>
+					<div class="header__btns">
+						<a href="#" class="header__favoritelink">
+							<div class="header__favorite">
+								<span>0</span>
+							</div>
+						</a>
+						<div class="header__search search-header">
+							<button class="search-header__btn"></button>
+							<form role="search" method="GET" class="search-header__form" action="https://x-one.pro/">
+								<input type="text" class="s" placeholder="Поиск" value="" name="s" aria-label="Поиск" title="Поиск">
+								<button type="submit" class="search-header__submit">
+									поиск
+								</button>
+							</form>
+						</div>
+						<button class="header__search-mob" data-popside=".popside-menu"></button>
+						<a href="#" class="header__cart cart-header" data-popside=".popside-cart">
+							<div class="cart-header__icon"></div>
+							<div class="cart-header__block">
+								<div class="cart-header__price">
+									<span>
+										0 ₽
+									</span>
+								</div>
+								<div class="cart-header__quantity">
+									<span>
+										0 товаров
+									</span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="header__cartmoblink" data-popside=".popside-cart">
+							<div class="header__cartmob">
+								<span>0</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page main-page">
+			<div class="main-sliders">
+				<div class="main-sliders__container">
+					<div class="main-sliders__main">
+						<button type="button" class="main__btn-slider main__btn-prev">
+							<img src="img/icons/arrow.svg" alt="">
+						</button>
+						<div class="main__slider swiper">
+							<div class="main__wrapper swiper-wrapper">
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/1.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/1.jpg">
+										<img srcset="img/main/main-slider/desk/1.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/2.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/2.jpg">
+										<img srcset="img/main/main-slider/desk/2.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/3.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/3.jpg">
+										<img srcset="img/main/main-slider/desk/3.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/4.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/4.jpg">
+										<img srcset="img/main/main-slider/desk/4.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/5.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/5.jpg">
+										<img srcset="img/main/main-slider/desk/5.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/6.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/6.jpg">
+										<img srcset="img/main/main-slider/desk/6.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/7.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/7.jpg">
+										<img srcset="img/main/main-slider/desk/7.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/8.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/8.jpg">
+										<img srcset="img/main/main-slider/desk/8.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/9.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/9.jpg">
+										<img srcset="img/main/main-slider/desk/9.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/10.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/10.jpg">
+										<img srcset="img/main/main-slider/desk/10.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/11.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/11.jpg">
+										<img srcset="img/main/main-slider/desk/11.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/12.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/12.jpg">
+										<img srcset="img/main/main-slider/desk/12.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/13.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/13.jpg">
+										<img srcset="img/main/main-slider/desk/13.jpg" alt="">
+									</picture>
+								</div>
+								<div class="main__slide swiper-slide">
+									<picture>
+										<source srcset="img/main/main-slider/mob/14.jpg" media="(max-width: 768px)">
+										<source srcset="img/main/main-slider/desk/14.jpg">
+										<img srcset="img/main/main-slider/desk/14.jpg" alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="main__btn-slider main__btn-next">
+							<img src="img/icons/arrow.svg" alt="">
+						</button>
+					</div>
+					<div class="main-sliders__thumbs">
+						<button type="button" class="thumbs__btn-slider thumbs__btn-prev">
+							<img src="img/icons/arrow.svg" alt="">
+						</button>
+						<div class="thumbs__slider swiper">
+							<div class="thumbs__wrapper swiper-wrapper">
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/1.webp" type="image/webp"><img src="img/main/main-slider/desk/1.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/2.webp" type="image/webp"><img src="img/main/main-slider/desk/2.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/3.webp" type="image/webp"><img src="img/main/main-slider/desk/3.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/4.webp" type="image/webp"><img src="img/main/main-slider/desk/4.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/5.webp" type="image/webp"><img src="img/main/main-slider/desk/5.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/6.webp" type="image/webp"><img src="img/main/main-slider/desk/6.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/7.webp" type="image/webp"><img src="img/main/main-slider/desk/7.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/8.webp" type="image/webp"><img src="img/main/main-slider/desk/8.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/9.webp" type="image/webp"><img src="img/main/main-slider/desk/9.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/10.webp" type="image/webp"><img src="img/main/main-slider/desk/10.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/11.webp" type="image/webp"><img src="img/main/main-slider/desk/11.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/12.webp" type="image/webp"><img src="img/main/main-slider/desk/12.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/13.webp" type="image/webp"><img src="img/main/main-slider/desk/13.jpg" alt=""></picture>
+								</div>
+								<div class="thumbs__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/desk/14.webp" type="image/webp"><img src="img/main/main-slider/desk/14.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="thumbs__btn-slider thumbs__btn-next">
+							<img src="img/icons/arrow.svg" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="main-title">
+				<div class="main-title__container">
+					<h1 class="main-title__title">
+						<span class="main-title__name">
+							x<span class="main-title__dot">.</span>one
+						</span>
+						<span class="main-title__text">
+							— АКСЕССУАРЫ ПРЕМИУМ КЛАССА
+						</span>
+					</h1>
+				</div>
+			</div>
+			<div class="main-online">
+				<div class="main-online__container">
+					<div class="main-online__body">
+						<div class="main-online__title">
+							Онлайн магазин
+						</div>
+						<div class="main-online__arrow">
+							<img src="img/icons/double-arrow.svg" alt="">
+						</div>
+						<div class="select-brand">
+							<div class="select-brand__item">
+								<button type="button" class="select-brand__title">
+									<p>ВЫБЕРИТЕ БРЕНД</p>
+									<span>
+										<svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+											<path fill="#fff" d="M98.9,184.7l1.8,2.1l136,156.5c4.6,5.3,11.5,8.6,19.2,8.6c7.7,0,14.6-3.4,19.2-8.6L411,187.1l2.3-2.6  c1.7-2.5,2.7-5.5,2.7-8.7c0-8.7-7.4-15.8-16.6-15.8v0H112.6v0c-9.2,0-16.6,7.1-16.6,15.8C96,179.1,97.1,182.2,98.9,184.7z" />
+										</svg>
+									</span>
+								</button>
+								<div class="select-brand__body">
+									<ul class="select-brand__ul">
+										<li><a href="/catalog/filter/apple/" class="select-brand__subitem">APPLE</a>
+										</li>
+										<li><a href="/catalog/filter/samsung-galaxy/" class="select-brand__subitem">SAMSUNG GALAXY</a></li>
+										<li><a href="/catalog/filter/huawei/" class="select-brand__subitem">HUAWEI</a>
+										</li>
+										<li><a href="/catalog/filter/honor/" class="select-brand__subitem">HONOR</a>
+										</li>
+										<li><a href="/catalog/filter/xiaomi/" class="select-brand__subitem">XIAOMI</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-advantages">
+				<div class="main-advantages__container">
+					<div class="main-advantages__items">
+						<div class="main-advantages__item">
+							<div class="main-advantages__img">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.73429 458.9121">
+									<g id="Слой_2" data-name="Слой 2">
+										<g id="Слой_1-2" data-name="Слой 1">
+											<path d="M229.07375,458.9121A229.69,229.69,0,0,1,.04364,224.82753C2.411,102.59591,101.80954-.11455,229.67837.0001,358.04861.11518,460.59247,105.013,458.70874,232.91932,456.90223,355.58158,357.88287,458.25649,229.07375,458.9121Zm53.42248-220.38086c6.19666,3.01933,11.17981,5.60593,16.316,7.84079,1.31724.57319,3.64577.63092,4.54091-.16478.827-.73514.883-3.1416.36319-4.44754-2.07795-5.22085-4.51255-10.29967-7.0622-15.98143.64748-.80019,1.75963-2.17475,2.3663-2.92454,6.04509,1.12992,11.38764,2.28148,16.78586,3.03386,1.41374.197,3.71695-.42852,4.30386-1.43736.57575-.98964-.08329-3.27014-.94763-4.4245-3.36038-4.48792-7.01793-8.75325-10.75664-13.33648.64369-1.31354,1.34546-2.74563,1.74232-3.5555,5.96469-.4579,11.27684-.70883,16.53679-1.37322,1.42123-.1795,3.47091-1.389,3.795-2.533.31371-1.10748-.88183-3.16641-2.00714-4.06482-4.26965-3.40874-8.7796-6.51644-13.47822-9.9396.30913-1.457.67306-3.17226.87411-4.11994,5.49919-1.99426,10.38268-3.60853,15.11722-5.58057,1.36762-.56963,3.41126-2.46121,3.20655-3.23134a6.58336,6.58336,0,0,0-3.41923-3.752c-4.83655-2.13128-9.8537-3.85256-14.69165-5.68973-1.51471-3.41617-.39783-5.4118,2.88219-7.08633a50.02888,50.02888,0,0,0,8.98282-6.297c1.27359-1.059,1.91633-2.87692,2.84526-4.35057-1.59856-.9823-3.1011-2.55682-4.8139-2.83457-4.9145-.797-9.9141-1.06893-14.93833-1.55282-2.277-4.18956-2.24939-4.16517.882-7.71845a68.77561,68.77561,0,0,0,6.055-7.30327c1.18168-1.7902,1.61-4.07787,2.37514-6.14313-2.171-.40262-4.38994-1.30665-6.50329-1.10491-4.58907.438-9.12424,1.4409-13.82435,2.23706-1.017-1.44884-2.03533-2.89968-2.76577-3.9403,2.39816-5.27471,4.72331-10.06475,6.70471-14.993a4.68283,4.68283,0,0,0-.6215-3.98465c-.55536-.684-2.55675-.77674-3.61586-.36532-4.17921,1.62347-8.1813,3.70968-12.37983,5.273-1.37712.51276-3.58521.52822-4.62115-.26446-1.04161-.797-1.64315-2.94436-1.481-4.39284.4616-4.12249,1.59578-8.16918,2.06776-12.29122.16582-1.44815-.39271-3.71938-1.40673-4.34989-.97193-.60436-3.2806-.00975-4.44735.82924-3.50488,2.52029-6.6423,5.55045-10.13713,8.08665a4.99112,4.99112,0,0,1-4.18956.68453,5.64615,5.64615,0,0,1-2.85737-3.63172c-.67806-4.2612-.68413-8.62631-1.27673-12.906-.17923-1.29462-1.2955-3.32163-2.20114-3.44814a5.419,5.419,0,0,0-4.15107,1.76861c-2.78543,3.30079-5.0524,7.041-7.85776,10.32221a5.89665,5.89665,0,0,1-4.36055,1.76122c-1.12329-.0892-2.563-1.58023-3.08909-2.786-1.52641-3.49864-2.4658-7.25681-4.03954-10.73-.753-1.66173-2.41889-2.90965-3.67132-4.345-1.38234,1.47117-3.14361,2.74017-4.06073,4.45959a36.18946,36.18946,0,0,0-3.46365,8.80112c-.905,3.95463-2.95915,5.62781-6.91717,5.05213-2.85242-4.083-5.55956-8.28083-8.643-12.18111a6.07938,6.07938,0,0,0-4.441-2.18192c-.89062.06357-2.05778,2.399-2.32365,3.85606a47.86679,47.86679,0,0,0-1.13323,10.9042c.2259,4.37374-1.70261,5.98826-5.24281,6.25432-4.26273-3.49835-8.1664-6.87081-12.282-9.96093-1.02821-.772-3.08258-1.261-4.03869-.73679-.93608.51326-1.59282,2.53618-1.46674,3.80662.44283,4.463,1.45516,8.871,1.85794,13.33541a5.94657,5.94657,0,0,1-1.578,4.41791c-.83125.74479-2.97424.683-4.21848.1864-3.85494-1.53871-7.48809-3.63921-11.35708-5.13381-1.49642-.57807-3.39453-.11594-5.10964-.12771-.00523,1.73856-.49252,3.65766.07765,5.18074,1.51163,4.038,3.62818,7.84785,5.17764,11.87415a5.02646,5.02646,0,0,1-.373,4.1858,4.94927,4.94927,0,0,1-3.94352,1.36132c-4.28065-.54777-8.48572-1.7144-12.77013-2.18988a6.2066,6.2066,0,0,0-4.7252,1.60489c-.59494.669.15884,3.20061,1.01732,4.37641,2.64663,3.625,5.7554,6.91173,8.4165,10.52731a5.13,5.13,0,0,1,.84553,4.16543c-.42916,1.06892-2.21176,2.05687-3.51182,2.22863-4.284.566-8.6483.54675-12.91941,1.17576-1.62467.23929-3.08023,1.62744-4.61286,2.492.863,1.50344,1.39706,3.41125,2.65215,4.43291,3.47754,2.83081,7.34288,5.182,10.86161,7.96711,1.05454.83464,2.12655,2.54592,1.99506,3.72187-.1254,1.12154-1.62632,2.51218-2.84058,3.01265-4.29781,1.77139-8.80149,3.04952-13.07154,4.87805a5.34166,5.34166,0,0,0-2.82541,3.50221c-.125.88237,1.55247,2.4962,2.75368,3.00782,5.17088,2.20243,10.46371,4.11842,16.07739,6.27931.12706,1.20061.29813,2.81678.42666,4.03112-4.56888,3.11531-8.9257,5.85588-12.98647,8.98125-1.39872,1.07651-2.05929,3.11239-3.05707,4.71,1.52886.87017,2.97292,2.23291,4.60323,2.51364a54.64776,54.64776,0,0,0,12.40159,1.18358c3.91121-.237,5.52721,1.03293,5.687,4.12408-3.7956,4.37839-7.39548,8.2847-10.6637,12.45124-.97973,1.249-1.03407,3.22406-1.51236,4.86651,1.81637.50776,3.70893,1.62562,5.43492,1.40994,5.37747-.672,10.69185-1.849,16.39429-2.897l2.23138,3.01843c-2.56977,5.30216-5.06331,9.99345-7.0865,14.87957-.66364,1.6027-.10683,3.71084-.10813,5.58789,1.73535-.062,3.6476.32778,5.17312-.26989,4.72974-1.853,9.31244-4.08145,14.2538-6.29955-.18625,1.32929-.289,2.46962-.51075,3.58632q-13.37062,67.32348-26.67934,134.65908c-.37176,1.89323-.14091,5.27935.86384,5.75869,1.66654.79506,4.45289.33687,6.30619-.55371,6.29441-3.02464,12.35339-6.53455,18.56487-9.73775,7.69788-3.96974,14.78086-3.05767,21.20708,2.63716,4.61129,4.08642,9.037,8.39688,13.82109,12.26656,1.90232,1.53871,4.548,2.158,6.85531,3.19587,1.01577-2.46706,2.81668-4.89919,2.92815-7.40648,1.40523-31.60737,2.55257-63.22613,3.8014-94.84061.2802-7.09345.69755-14.18147,1.05175-21.272,1.30139,1.40327,1.65286,2.91908,2.44754,4.14818a56.73974,56.73974,0,0,0,3.85491,4.82226c1.40377-1.49039,3.18253-2.77779,4.12437-4.51826a76.014,76.014,0,0,0,3.45634-8.54449,191.00679,191.00679,0,0,1,1.72145,20.86859c1.35,33.44074,2.6239,66.8848,4.11444,100.31919.09792,2.19646,1.31958,5.58954,2.843,6.13888,1.6536.5963,4.63428-1.041,6.40028-2.48317,4.7669-3.8931,9.18416-8.21308,13.76153-12.34q10.09438-9.101,22.055-2.8027c6.03318,3.1854,11.955,6.59588,18.09464,9.55708,1.86221.89819,5.01043,1.57886,6.24681.63177,1.22032-.93478,1.39674-4.19433.95511-6.19658q-14.7317-66.78786-29.71446-133.52034C282.882,242.53453,282.79285,240.81369,282.49623,238.53124Z" style="fill:#fff"></path>
+											<path d="M296.84367,172.024c-.00678,37.72291-29.8226,67.48726-67.60336,67.48664-37.77233-.00061-67.44435-30.0399-67.422-68.25657.02144-36.69242,30.41213-66.79735,67.43383-66.79974A67.16961,67.16961,0,0,1,296.84367,172.024Zm-13.00628-.042a54.50668,54.50668,0,1,0-54.1889,54.51092A54.55641,54.55641,0,0,0,283.83739,171.982Z" style="fill:#fff"></path>
+											<path d="M229.27489,142.29845c2.99457,5.3714,5.35574,10.30211,8.40351,14.76359a12.543,12.543,0,0,0,6.33548,4.60522c5.04032,1.48806,10.32063,2.16285,16.3341,3.33317-4.20412,4.51983-8.042,8.20588-11.2994,12.3485a11.62939,11.62939,0,0,0-2.40881,6.96124c.16693,5.43461,1.11435,10.84522,1.85406,17.19546-5.60605-2.61633-10.41342-5.19289-15.48-7.06936a11.48131,11.48131,0,0,0-7.34865-.06137c-4.94771,1.81188-9.62416,4.36477-15.40665,7.08473.67692-5.9615.92659-11.05341,1.92646-15.99345a8.34129,8.34129,0,0,0-2.62251-8.43c-3.65134-3.61413-7.04313-7.4906-11.21874-11.97916,5.61009-1.11713,10.51484-2.24158,15.47288-3.03117,3.53386-.56278,6.05561-1.93017,7.672-5.37464C223.66982,152.00327,226.3664,147.59732,229.27489,142.29845Z" style="fill:#fff"></path>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<div class="main-advantages__desc">
+								<div class="main-advantages__title">
+									100% качество продукции
+								</div>
+								<div class="main-advantages__text">
+									Только сертифицированные и оригинальные товары
+								</div>
+							</div>
+						</div>
+						<div class="main-advantages__item">
+							<div class="main-advantages__img">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.9017 458.90156">
+									<g id="Слой_2" data-name="Слой 2">
+										<g id="Слой_1-2" data-name="Слой 1">
+											<path d="M229.59977,458.90146C103.333,459.02135.17058,356.07043.00021,229.7725-.17061,103.13739,102.77292.0196,229.38444,0,356.134-.01962,458.94064,102.80368,458.90169,229.55442,458.86283,355.96164,356.06336,458.78132,229.59977,458.90146Zm-.22953-299.666c-1.45763-1.80745-2.70378-3.30524-3.89945-4.84229-20.65471-26.552-54.48578-33.67145-81.302-15.81043-27.23194,18.13788-36.67828,45.12459-33.70836,76.76448,2.13141,22.70654,12.57643,42.27275,25.65323,60.43389,24.521,34.05489,56.96217,59.55314,91.08427,83.12408,1.19088.82266,4.16909.39038,5.53354-.56823,25.24174-17.73364,49.76033-36.30576,70.7572-59.181,14.1685-15.436,27.01384-31.724,35.59018-50.94562,13.72376-30.75821,15.03117-61.15139-3.96764-90.51493-16.129-24.92812-47.71814-35.35475-74.43537-24.62334C247.60488,138.32222,237.513,147.28729,229.37024,159.23548Z" style="fill:#fff"></path>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<div class="main-advantages__desc">
+								<div class="main-advantages__title">
+									50 млн. счастливых клиентов
+								</div>
+								<div class="main-advantages__text">
+									Забронировали более 50 миллионов телефонов по всему Миру
+								</div>
+							</div>
+						</div>
+						<div class="main-advantages__item">
+							<div class="main-advantages__img">
+								<svg xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Слой_1" x="0px" y="0px" viewBox="0 0 458.6 458.8" style="enable-background:new 0 0 458.6 458.8;" xml:space="preserve">
+									<style type="text/css">
+										.st0 {
+											fill: #fff
+										}
+									</style>
+									<switch>
+										<g i:extraneous="self">
+											<g id="Слой_2_1_">
+												<g id="Слой_1-2">
+													<path class="st0" d="M458.6,224.5C456,102.7,356.9-0.1,228.7,0C101.5,0.1-0.2,103.2,0,231.7C0.2,356.2,104,459,229.5,458.8 c1.4,0,2.8,0,4.2,0C360.5,456.2,461.2,351.3,458.6,224.5z M46.9,123.4H356v23.4h-59.5v118.8H46.9V123.4z M47.6,299v-27.2h23.8 c-10.3,6-16.6,13.3-19.2,23.5C51.9,296.6,49.8,297.3,47.6,299z M85.5,335.3c-17.6,0-31.8-14.2-31.9-31.7v-0.1 c0-17.6,14.3-31.9,31.9-31.9c17.6,0,31.9,14.3,31.9,31.9C117.4,321,103.1,335.3,85.5,335.3z M371,303.7 c-0.3,17.7-14.8,31.8-32.5,31.5h-0.1c-17.6-0.3-31.6-14.9-31.3-32.5c0.3-17.6,14.9-31.6,32.5-31.3 C357,271.8,371.3,286.4,371,303.7C371,303.7,371,303.7,371,303.7z M411.7,296.7h-35.9c-5.8-17.2-16.8-29.1-36.1-29.4 c-20.3-0.2-31,12.9-37.6,30.4H120.5c-2.6-5.1-4.4-10.4-7.6-14.7c-3.1-4.2-7.5-7.3-11.7-11.2H302V154.4h55.7 c2,10,3.7,19.8,6.1,29.4c2.8,10.9,6.5,21.6,9.6,32.5c1.5,5.1,4.1,8.8,9.2,11c6,2.5,11.6,5.8,17.7,8.1c4.1,1.5,5,4.1,5,7.9 c-0.1,10.7,0,21.3,0,32v5.7c2.2,0.5,4.1,0.9,6.3,1.4V296.7z">
+													</path>
+													<path class="st0" d="M368.6,224c-3.9,0-6.7,0-9.5,0c-10.5,0-20.9,0-31.7,0v-43c8.9,0,17.6-0.1,26.2,0.1c1.3,0.2,2.5,1,3.2,2.2 C360.6,196.5,364.4,209.7,368.6,224z">
+													</path>
+													<path class="st0" d="M378.9,267.9c1.2-0.2,2.4-0.4,3.6-0.4c6.9,0,13.9,0,21.2,0v14.7h-24.8L378.9,267.9z">
+													</path>
+													<path class="st0" d="M339,293.8c5.2-0.1,9.5,4,9.6,9.1c0,0.2,0,0.5,0,0.7c-0.1,5.3-4.4,9.4-9.7,9.4c-5.2,0.1-9.5-4.2-9.6-9.4 c0,0,0,0,0-0.1c-0.3-5.2,3.7-9.6,8.9-9.8C338.5,293.8,338.8,293.8,339,293.8z">
+													</path>
+													<path class="st0" d="M85.8,313c-5.3,0.1-9.7-4.1-9.7-9.4c-0.1-5.3,4.1-9.7,9.4-9.7c5.3-0.2,9.7,4,9.9,9.3c0.2,5.3-4,9.7-9.3,9.9 C85.9,313,85.8,313,85.8,313z">
+													</path>
+												</g>
+											</g>
+											<g>
+												<path class="st0" d="M70.4,217.3h-9.6l18.9-17.6l-18.8-17.5h9.6l13.9,13l13.9-13h9.6l-18.8,17.5l18.9,17.6h-9.6l-14.1-13.1 L70.4,217.3z">
+												</path>
+												<path class="st0" d="M131.7,191.7c0-1.3,0.2-2.6,0.7-3.8c0.7-1.7,1.8-3.1,3.4-4.1c1.5-1,3.3-1.5,5.4-1.5h30.1 c2.8,0,5,0.9,6.8,2.7c1.8,1.8,2.7,4,2.7,6.8v16.1c0,2.8-0.9,5-2.7,6.8c-1.8,1.8-4.1,2.7-6.8,2.7h-30.1c-2.8,0-5-0.9-6.8-2.7 c-1.8-1.8-2.7-4-2.7-6.8V191.7z M142.1,188c-2.3,0-3.5,1.2-3.5,3.5v16.8c0,2.3,1.2,3.5,3.5,3.5h28.4c2.3,0,3.5-1.2,3.5-3.5v-16.8 c0-2.3-1.2-3.5-3.5-3.5H142.1z">
+												</path>
+												<path class="st0" d="M185.7,182.3h6.1L225,208v-25.7h6.9v35.1h-6.1l-33.2-25.7v25.7h-6.9V182.3z">
+												</path>
+												<path class="st0" d="M281.7,217.3h-44.5v-35.1h44.5v5.7h-37.6v8.9h35.3v5.7h-35.3v9h37.6V217.3z">
+												</path>
+											</g>
+											<g>
+												<path class="st0" d="M116.1,196.2h6.9v7.3h-6.9V196.2z"></path>
+											</g>
+										</g>
+									</switch>
+								</svg>
+							</div>
+							<div class="main-advantages__desc">
+								<div class="main-advantages__title">
+									Быстрая доставка
+								</div>
+								<div class="main-advantages__text">
+									Лучший сервис и доставка по всей России
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="iphones-section">
+				<div class="iphones-section__container">
+					<div class="iphones-section__block iphones-block">
+						<div class="iphones-section__main main-iphones">
+							<h2 class="main-iphones__title">iPhone 14 Series</h2>
+							<p class="main-iphones__subtitle">Японское качество аксессуаров премиум класса</p>
+							<div class="main-iphones__img">
+								<picture><source srcset="img/main/iphones/14iphone-block-pc-min.webp" type="image/webp"><img alt="iPhone 14 Series" src="img/main/iphones/14iphone-block-pc-min.png" title="iPhone 14 Series"></picture>
+							</div>
+						</div>
+						<div class="iphones-section__items">
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/iphone-14-pro-max-2-mob-min.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_14_pro_max.png">
+										<img srcset="img/main/iphones/iphone_14_pro_max.png" alt="iPhone 14 Pro Max" title="iPhone 14 Pro Max">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 14</div>
+									<div class="item-iphones__subname">Pro Max</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-14-pro-max/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/iphone-14-pro-2-mob-min.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_14_pro.png">
+										<img src="img/main/iphones/iphone_14_pro.png" alt="iPhone 14 Pro" title="iPhone 14 Pro">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 14</div>
+									<div class="item-iphones__subname">Pro</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-14-pro/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/iphone-14-plus-1-mob-min.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_14_plus.png">
+										<img src="img/main/iphones/iphone_14_plus.png" alt="iPhone 14 Plus" title="iPhone 14 Plus">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 14</div>
+									<div class="item-iphones__subname">Plus</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-14-plus/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/iphone-14-2-mob-min.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_14_basic.png">
+										<img src="img/main/iphones/iphone_14_basic.png" alt="iPhone 14 Basiс" title="iPhone 14 Basiс">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 14</div>
+									<div class="item-iphones__subname">Basiс</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-14/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="iphones-section__block iphones-block">
+						<div class="iphones-section__main main-iphones">
+							<h2 class="main-iphones__title">iPhone 13 Series</h2>
+							<p class="main-iphones__subtitle">Броня телефона - надёжная защита при падениях</p>
+							<div class="main-iphones__img">
+								<picture><source srcset="img/main/iphones/13iphone-block-pc-min.webp" type="image/webp"><img alt="iPhone 13 Series" src="img/main/iphones/13iphone-block-pc-min.png" title="iPhone 13 Series"></picture>
+							</div>
+						</div>
+						<div class="iphones-section__items">
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/mobile-xone-iphone-13-pro-max-v2.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_13_pro_max.png">
+										<img src="img/main/iphones/iphone_13_pro_max.png" alt="iPhone 13 Pro Max" title="iPhone 13 Pro Max">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 13</div>
+									<div class="item-iphones__subname">Pro Max</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-13-pro-max/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/mobile-xone-iphone-13-pro-v2.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_13_pro.png">
+										<img src="img/main/iphones/iphone_13_pro.png" alt="iPhone 13 Pro" title="iPhone 13 Pro">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 13</div>
+									<div class="item-iphones__subname">Pro</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-13-pro/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/mobile-xone-iphone-13-mini-v2.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_13_mini.png">
+										<img src="img/main/iphones/iphone_13_mini.png" alt="iPhone 13 Mini" title="iPhone 13 Mini">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 13</div>
+									<div class="item-iphones__subname">Mini</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-13-mini/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+							<div class="iphones-section__item item-iphones">
+								<div class="item-iphones__img">
+									<picture>
+										<source srcset="img/main/iphones/mobile-xone-iphone-13-v2.png" media="(max-width: 1200px)">
+										<source srcset="img/main/iphones/iphone_13_basic.png">
+										<img src="img/main/iphones/iphone_13_basic.png" alt="iPhone 13 Basiс" title="iPhone 13 Basiс">
+									</picture>
+								</div>
+								<div class="item-iphones__block">
+									<div class="item-iphones__name">iPhone 13</div>
+									<div class="item-iphones__subname">Basiс</div>
+									<a class="item-iphones__btn" href="/catalog/filter/apple/iphone-13/">Купить
+										<span>сейчас</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-promo">
+				<div class="main-promo__container">
+					<div class="main-promo__items">
+						<a href="#" class="main-promo__item">
+							<picture><source srcset="img/main/promo/2.webp" type="image/webp"><img src="img/main/promo/2.jpg" alt=""></picture>
+						</a>
+						<a href="#" class="main-promo__item">
+							<picture><source srcset="img/main/promo/3.webp" type="image/webp"><img src="img/main/promo/3.jpg" alt=""></picture>
+						</a>
+						<a href="#" class="main-promo__item">
+							<picture><source srcset="img/main/promo/1.webp" type="image/webp"><img src="img/main/promo/1.jpg" alt=""></picture>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="main-youtubes">
+				<div class="main-youtubes__container">
+					<h2 class="main-youtubes__title _main-title">СМОТРИТЕ ВИДЕО О НАШИХ ТЕХНОЛОГИЯХ</h2>
+					<div class="main-youtubes__items">
+						<div class="main-youtubes__item">
+							<div class="ytvideo main-youtubes__ytvideo">
+								<a class="ytvideo__link" href="https://youtu.be/wq1KNNhpFxE">
+									<picture>
+										<source srcset="https://i.ytimg.com/vi_webp/wq1KNNhpFxE/maxresdefault.webp" type="image/webp">
+										<img class="ytvideo__media" src="https://i.ytimg.com/vi/wq1KNNhpFxE/maxresdefault.jpg" alt="video">
+									</picture>
+								</a>
+								<button class="ytvideo__button" aria-label="Запустить видео">
+									<svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+										<path class="ytvideo__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+										</path>
+										<path class="ytvideo__button-icon" d="M 45,24 27,14 27,34"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="main-youtubes__item">
+							<div class="ytvideo main-youtubes__ytvideo">
+								<a class="ytvideo__link" href="https://youtu.be/Kuyp7oC9ZZU">
+									<picture>
+										<source srcset="https://i.ytimg.com/vi_webp/Kuyp7oC9ZZU/maxresdefault.webp" type="image/webp">
+										<img class="ytvideo__media" src="https://i.ytimg.com/vi/Kuyp7oC9ZZU/maxresdefault.jpg" alt="video">
+									</picture>
+								</a>
+								<button class="ytvideo__button" aria-label="Запустить видео">
+									<svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+										<path class="ytvideo__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+										</path>
+										<path class="ytvideo__button-icon" d="M 45,24 27,14 27,34"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="main-youtubes__item">
+							<div class="ytvideo main-youtubes__ytvideo">
+								<a class="ytvideo__link" href="https://youtu.be/ZAFPUUuyB58">
+									<picture>
+										<source srcset="https://i.ytimg.com/vi_webp/ZAFPUUuyB58/maxresdefault.webp" type="image/webp">
+										<img class="ytvideo__media" src="https://i.ytimg.com/vi/ZAFPUUuyB58/maxresdefault.jpg" alt="video">
+									</picture>
+								</a>
+								<button class="ytvideo__button" aria-label="Запустить видео">
+									<svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+										<path class="ytvideo__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+										</path>
+										<path class="ytvideo__button-icon" d="M 45,24 27,14 27,34"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="main-youtubes__item">
+							<div class="ytvideo main-youtubes__ytvideo">
+								<a class="ytvideo__link" href="https://youtu.be/t-cwoxOoZQE">
+									<picture>
+										<source srcset="https://i.ytimg.com/vi_webp/t-cwoxOoZQE/mqdefault.webp" type="image/webp">
+										<img class="ytvideo__media" src="https://i.ytimg.com/vi/t-cwoxOoZQE/mqdefault.jpg" alt="video">
+									</picture>
+								</a>
+								<button class="ytvideo__button" aria-label="Запустить видео">
+									<svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+										<path class="ytvideo__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+										</path>
+										<path class="ytvideo__button-icon" d="M 45,24 27,14 27,34"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="main-youtubes__item">
+							<div class="ytvideo main-youtubes__ytvideo">
+								<a class="ytvideo__link" href="https://youtu.be/WSnkp9PAMfI">
+									<picture>
+										<source srcset="https://i.ytimg.com/vi_webp/WSnkp9PAMfI/maxresdefault.webp" type="image/webp">
+										<img class="ytvideo__media" src="https://i.ytimg.com/vi/WSnkp9PAMfI/maxresdefault.jpg" alt="video">
+									</picture>
+								</a>
+								<button class="ytvideo__button" aria-label="Запустить видео">
+									<svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+										<path class="ytvideo__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+										</path>
+										<path class="ytvideo__button-icon" d="M 45,24 27,14 27,34"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="main-youtubes__item">
+							<div class="ytvideo main-youtubes__ytvideo">
+								<a class="ytvideo__link" href="https://youtu.be/dxxoXDgy1X0">
+									<picture>
+										<source srcset="https://i.ytimg.com/vi_webp/dxxoXDgy1X0/maxresdefault.webp" type="image/webp">
+										<img class="ytvideo__media" src="https://i.ytimg.com/vi/dxxoXDgy1X0/maxresdefault.jpg" alt="video">
+									</picture>
+								</a>
+								<button class="ytvideo__button" aria-label="Запустить видео">
+									<svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+										<path class="ytvideo__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+										</path>
+										<path class="ytvideo__button-icon" d="M 45,24 27,14 27,34"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-smi">
+				<div class="main-smi__container">
+					<h2 class="main-smi__title _main-title">СМИ О НАС</h2>
+					<p class="main-smi__subtitle _main-subtitle">Что говорят СМИ о X-ONE</p>
+					<div class="smi-slider">
+						<div class="smi-slider__container">
+							<div class="smi-slider__body">
+								<button type="button" class="smi__btn-slider smi__btn-prev">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#820000" opacity="1" fill-rule="evenodd" />
+									</svg>
+								</button>
+								<div class="smi__slider swiper">
+									<div class="smi__wrapper swiper-wrapper">
+										<div class="smi__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="smi__item">
+													<picture><source srcset="img/main/smi/1.webp" type="image/webp"><img src="img/main/smi/1.jpg" alt=""></picture>
+													<div class="black"></div>
+													<p>X-ONE – надежная защита для iPhone и Apple Watch от мирового
+														бренда</p>
+												</div>
+											</a>
+										</div>
+										<div class="smi__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="smi__item">
+													<picture><source srcset="img/main/smi/1.webp" type="image/webp"><img src="img/main/smi/1.jpg" alt=""></picture>
+													<div class="black"></div>
+													<p>X-ONE – надежная защита для iPhone и Apple Watch от мирового
+														бренда</p>
+												</div>
+											</a>
+										</div>
+										<div class="smi__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="smi__item">
+													<picture><source srcset="img/main/smi/1.webp" type="image/webp"><img src="img/main/smi/1.jpg" alt=""></picture>
+													<div class="black"></div>
+													<p>X-ONE – надежная защита для iPhone и Apple Watch от мирового
+														бренда</p>
+												</div>
+											</a>
+										</div>
+										<div class="smi__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="smi__item">
+													<picture><source srcset="img/main/smi/1.webp" type="image/webp"><img src="img/main/smi/1.jpg" alt=""></picture>
+													<div class="black"></div>
+													<p>X-ONE – надежная защита для iPhone и Apple Watch от мирового
+														бренда</p>
+												</div>
+											</a>
+										</div>
+										<div class="smi__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="smi__item">
+													<picture><source srcset="img/main/smi/1.webp" type="image/webp"><img src="img/main/smi/1.jpg" alt=""></picture>
+													<div class="black"></div>
+													<p>X-ONE – надежная защита для iPhone и Apple Watch от мирового
+														бренда</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="smi__btn-slider smi__btn-next">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#820000" opacity="1" fill-rule="evenodd" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-news">
+				<div class="main-news__container">
+					<p class="main-news__toptitle _main-toptitle">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</p>
+					<h2 class="main-news__title _main-title">НОВОСТИ</h2>
+					<p class="main-news__subtitle _main-subtitle">Здесь мы рассказываем о новинках, акциях и новостях
+						бренда</p>
+					<div class="news-slider">
+						<div class="news-slider__container">
+							<div class="news-slider__body">
+								<button type="button" class="news__btn-slider news__btn-prev">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#820000" opacity="1" fill-rule="evenodd" />
+									</svg>
+								</button>
+								<div class="news__slider swiper">
+									<div class="news__wrapper swiper-wrapper">
+										<div class="news__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a class="news__img" href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="item text-center">
+													<picture><source srcset="img/main/news/1.webp" type="image/webp"><img src="img/main/news/1.jpg"></picture>
+													<div class="black"></div>
+												</div>
+											</a>
+											<div class="news__bottom bot-news">
+												<h3 class="bot-news__title">
+													Открытие магазина официального дилера X-ONE в г.Чита
+												</h3>
+												<p class="bot-news__text">
+													Магазин премиум защиты для смартфонов и аксессуаров X-ONE в Чита
+													Открытие магазина X-ONE в Чите...
+												</p>
+												<a href="#" class="bot-news__link">Продолжить чтение</a>
+											</div>
+										</div>
+										<div class="news__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a class="news__img" href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="item text-center">
+													<picture><source srcset="img/main/news/1.webp" type="image/webp"><img src="img/main/news/1.jpg"></picture>
+													<div class="black"></div>
+												</div>
+											</a>
+											<div class="news__bottom bot-news">
+												<h3 class="bot-news__title">
+													Открытие магазина
+												</h3>
+												<p class="bot-news__text">
+													Магазин премиум защиты для смартфонов и аксессуаров X-ONE в Чита
+													Открытие магазина X-ONE в Чите Магазин премиум защиты для смартфонов
+													и аксессуаров X-ONE в Чита
+													Открытие магазина X-ONE в Чите
+												</p>
+												<a href="#" class="bot-news__link">Продолжить чтение</a>
+											</div>
+										</div>
+										<div class="news__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a class="news__img" href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="item text-center">
+													<picture><source srcset="img/main/news/1.webp" type="image/webp"><img src="img/main/news/1.jpg"></picture>
+													<div class="black"></div>
+												</div>
+											</a>
+											<div class="news__bottom bot-news">
+												<h3 class="bot-news__title">
+													Открытие магазина официального дилера X-ONE в г.Чита
+												</h3>
+												<p class="bot-news__text">
+													Магазин премиум защиты для смартфонов и аксессуаров X-ONE в Чита
+													Открытие магазина X-ONE в Чите...
+												</p>
+												<a href="#" class="bot-news__link">Продолжить чтение</a>
+											</div>
+										</div>
+										<div class="news__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a class="news__img" href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="item text-center">
+													<picture><source srcset="img/main/news/1.webp" type="image/webp"><img src="img/main/news/1.jpg"></picture>
+													<div class="black"></div>
+												</div>
+											</a>
+											<div class="news__bottom bot-news">
+												<h3 class="bot-news__title">
+													Открытие магазина официального дилера X-ONE в г.Чита
+												</h3>
+												<p class="bot-news__text">
+													Магазин премиум защиты для смартфонов и аксессуаров X-ONE в Чита
+													Открытие магазина X-ONE в Чите...
+												</p>
+												<a href="#" class="bot-news__link">Продолжить чтение</a>
+											</div>
+										</div>
+										<div class="news__slide swiper-slide">
+											<div class="slide-date">
+												<div class="slide-date__number">02</div>
+												<div class="slide-date__month">ноя</div>
+											</div>
+											<a class="news__img" href="/news/x-one-nadezhnaya-zashchita-dlya-iphone-i-apple-watch-ot-mirovogo-brenda/">
+												<div class="item text-center">
+													<picture><source srcset="img/main/news/1.webp" type="image/webp"><img src="img/main/news/1.jpg"></picture>
+													<div class="black"></div>
+												</div>
+											</a>
+											<div class="news__bottom bot-news">
+												<h3 class="bot-news__title">
+													Открытие магазина официального дилера X-ONE в г.Чита
+												</h3>
+												<p class="bot-news__text">
+													Магазин премиум защиты для смартфонов и аксессуаров X-ONE в Чита
+													Открытие магазина X-ONE в Чите Магазин премиум защиты для смартфонов
+													и аксессуаров X-ONE в Чита
+													Открытие магазина X-ONE в Чите
+												</p>
+												<a href="#" class="bot-news__link">Продолжить чтение</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="news__btn-slider news__btn-next">
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#820000" opacity="1" fill-rule="evenodd" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-reviews">
+				<div class="main-reviews__container">
+					<h2 class="main-reviews__title _main-title">отзывы</h2>
+					<div class="reviews-slider__body">
+						<button type="button" class="reviews__btn-slider reviews__btn-prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+								<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#820000" opacity="1" fill-rule="evenodd" />
+							</svg>
+						</button>
+						<div class="reviews__slider swiper">
+							<div class="reviews__wrapper swiper-wrapper" data-gallery>
+								<a class="reviews__slide swiper-slide" href="#" data-src="https://www.youtube.com/embed/qM57fN1J0r4" data-poster="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.jpg" data-ytlink="qM57fN1J0r4">
+									<picture><source srcset="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.webp" type="image/webp"><img src="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.jpg" alt=""></picture>
+								</a>
+								<a class="reviews__slide swiper-slide" href="#" data-src="//www.youtube.com/watch?v=PUj9eKINycc" data-poster="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.jpg" data-ytlink="PUj9eKINycc">
+									<picture><source srcset="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.webp" type="image/webp"><img src="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.jpg" alt=""></picture>
+								</a>
+								<a class="reviews__slide swiper-slide" href="#" data-src="//www.youtube.com/watch?v=qM57fN1J0r4" data-poster="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.jpg" data-ytlink="qM57fN1J0r4">
+									<picture><source srcset="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.webp" type="image/webp"><img src="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.jpg" alt=""></picture>
+								</a>
+								<a class="reviews__slide swiper-slide" href="#" data-src="//www.youtube.com/watch?v=PUj9eKINycc" data-poster="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.jpg" data-ytlink="PUj9eKINycc">
+									<picture><source srcset="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.webp" type="image/webp"><img src="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.jpg" alt=""></picture>
+								</a>
+								<a class="reviews__slide swiper-slide" href="#" data-src="//www.youtube.com/watch?v=qM57fN1J0r4" data-poster="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.jpg" data-ytlink="qM57fN1J0r4">
+									<picture><source srcset="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.webp" type="image/webp"><img src="https://i.ytimg.com/vi/qM57fN1J0r4/hqdefault.jpg" alt=""></picture>
+								</a>
+								<a class="reviews__slide swiper-slide" href="#" data-src="//www.youtube.com/watch?v=PUj9eKINycc" data-poster="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.jpg" data-ytlink="PUj9eKINycc">
+									<picture><source srcset="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.webp" type="image/webp"><img src="https://i.ytimg.com/vi/PUj9eKINycc/hqdefault.jpg" alt=""></picture>
+								</a>
+							</div>
+						</div>
+						<button type="button" class="reviews__btn-slider reviews__btn-next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+								<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#820000" opacity="1" fill-rule="evenodd" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<button class="scrolltotop" data-goto=".header"></button>
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__item">
+						<div class="footer__logo">
+							<img src="img/logo.svg" alt="">
+						</div>
+						<p class="footer__text">
+							Защитные бронепленки, противоударные стекла и чехлы, зарядные кабели, адаптеры блоки питания для
+							смартфонов, большой выбор, быстрая доставка, гарантия
+						</p>
+						<div class="footer-contacts">
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/location-dot-white.svg" width="18" height="18">
+								</div>
+								<span>Москва, Научный проезд 17</span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/phone-white.svg" width="18" height="18">
+								</div>
+								<span>Телефон:<a href="tel:88007077282">8(800)707-72-82</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/at-white.svg" width="18" height="18">
+								</div>
+								<span>Email: <a href="mailto:support@x-one.pro">shop@x-one.pro</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/telegram-white.svg" width="18" height="18">
+								</div>
+								<span>Telegram: <a target="_blank" href="https://t.me/xone_europe" rel="noopener">xone_europe</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/vk-icon.svg" width="18" height="18">
+								</div>
+								<span>ВКонтакте: <a target="_blank" href="https://vk.com/xone.europe" rel="noopener">xone.europe</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/instagram-white.svg" width="18" height="18">
+								</div>
+								<span>Instagram: <a target="_blank" href="https://instagram.com/xone.europe" rel="noopener">xone.europe</a></span>
+							</div>
+							<div class="footer-contacts__row">
+								<div class="footer-contacts__img">
+									<img src="img/footer/youtube-white.svg" width="18" height="18">
+								</div>
+								<span>YouTube: <a target="_blank" href="https://www.youtube.com/channel/UCst2_d9QGGDXOLBHq7HwmiQ" rel="noopener"> <span class="brandtxt">X-ONE</span> эксперт в защите экрана</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="footer__item footmarket">
+						<h4 class="footmarket__title">
+							wildberries
+						</h4>
+						<div class="footmarket__img">
+							<picture><source srcset="img/footer/wildberries.webp" type="image/webp"><img src="img/footer/wildberries.png" alt=""></picture>
+						</div>
+						<p class="footmarket__text">
+							Полный ассортимент товаров <span class="brandtxt">X-ONE</span> представлен в каталоге нашего
+							магазина на маркетплейсе WILDBERRIES
+						</p>
+						<a href="#" class="footmarket__link footmarket__link--wildberries">
+							<svg class="wd-icon e-font-icon-svg e-fas-shopping-cart" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+								<path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+								</path>
+							</svg>
+							<span>
+								wildberries
+							</span>
+						</a>
+					</div>
+					<div class="footer__item footmarket">
+						<h4 class="footmarket__title">
+							ozon
+						</h4>
+						<div class="footmarket__img">
+							<picture><source srcset="img/footer/ozon.webp" type="image/webp"><img src="img/footer/ozon.jpg" alt=""></picture>
+						</div>
+						<p class="footmarket__text">
+							Полный ассортимент товаров <span class="brandtxt">X-ONE</span> представлен в каталоге нашего
+							магазина на маркетплейсе OZON
+						</p>
+						<a href="#" class="footmarket__link footmarket__link--ozon">
+							<svg class="wd-icon e-font-icon-svg e-fas-shopping-cart" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+								<path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+								</path>
+							</svg>
+							<span>
+								ozon
+							</span>
+						</a>
+					</div>
+					<div class="footer__item footmarket">
+						<h4 class="footmarket__title">
+							Яндекс Маркет
+						</h4>
+						<div class="footmarket__img">
+							<picture><source srcset="img/footer/yandex.webp" type="image/webp"><img src="img/footer/yandex.jpg" alt=""></picture>
+						</div>
+						<p class="footmarket__text">
+							Полный ассортимент товаров <span class="brandtxt">X-ONE</span> представлен в каталоге нашего
+							магазина на маркетплейсе Яндекс Маркет
+						</p>
+						<a href="#" class="footmarket__link footmarket__link--yandex">
+							<svg class="wd-icon e-font-icon-svg e-fas-shopping-cart" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+								<path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+								</path>
+							</svg>
+							<span>
+								Маркет
+							</span>
+						</a>
+					</div>
+					<div class="footer__item">
+						<ul class="footer__ul">
+							<li>
+								<a href="#">
+									Инструкции по установке
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Контакты
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Наши филиалы
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Наши партнёры
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Полезные статьи
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Карта сайта
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="footer__link">
+							Сотрудничество
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__left">
+						<p>
+							<a href="https://x-one.pro" class="bottom-footer__link">
+								<span class="bottom-footer__name">
+									x<span class="bottom-footer__dot">.</span>one
+								</span>
+								<span class="reserved">®</span>
+							</a>
+							- товарный знак охраняется на территории РФ и СНГ. Все права и данные защищены.
+						</p>
+						<p>
+							При использовании материалов сайта, ссылка на сайт обязательна.
+						</p>
+					</div>
+					<div class="bottom-footer__right">
+						<p>
+							ОГРН: 318272400062860 ИНН: 270604727582
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<img src="img//icons/close.svg" alt="close">
+			</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<!-- ========================= SIGN-IN =========================== -->
+
+	<div class="popside popside-sign">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__top">
+					<h3 class="popside__title">
+						Вход
+					</h3>
+					<button class="popside__close" data-close>
+						<img src="img/icons/close.svg" alt="close">
+						<span>закрыть</span>
+					</button>
+				</div>
+				<form data-dev method="POST" class="form popside-form" action="sendmail.php">
+					<div class="form__input popside-form__input">
+						<label for="popside-login">
+							Имя пользователя или Email
+							<span>*</span>
+						</label>
+						<input id="popside-login" data-required type="text" name="login" autocomplete="on" placeholder="" data-error="Введите логин">
+					</div>
+					<div class="form__input popside-form__input">
+						<label for="popside-password">
+							Пароль
+							<span>*</span>
+						</label>
+						<input id="popside-password" data-required type="password" name="password" autocomplete="off" placeholder="" data-error="Введите пароль">
+					</div>
+					<button type="submit" class="form__btn popside-form__btn popside-form__btn--sign _btn">
+						Войти
+					</button>
+					<div class="popside-sign__row">
+						<div class="popside-form__check">
+							<input type="checkbox" class="popside-form__checkbox form__checkbox" id="popside-sign__checkbox" />
+							<label for="popside-sign__checkbox" class="popside-form__checklabel form__checklabel">
+								Запомнить меня
+							</label>
+						</div>
+						<button class="popside-sign__forgot" data-popside=".popside-forgot">Забыли пароль?</button>
+					</div>
+					<div class="popside-form__create">
+						<div class="popside-form__user"></div>
+						<p class="popside-form__noaccaunt">
+							Нет аккаунта?
+						</p>
+						<a href="#" class="popside-form__btnsecond">
+							Создать аккаунт
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- =================== FORGOT ================================== -->
+
+	<div class="popside popside-menu">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__items">
+					<div class="popside__search">
+						<form role="search" method="GET" class="search-popside__form" action="https://x-one.pro/">
+							<input data-no-focus-classes type="text" class="s" placeholder="Поиск" value="" name="s" aria-label="Поиск" autocomplete="off" title="Поиск">
+							<button type="submit" class="search-popside__submit">
+								поиск
+							</button>
+						</form>
+					</div>
+					<div class="popside__menu"></div>
+					<button class="popside__cooperate" data-popside=".popside-cooperate">СОТРУДНИЧЕСТВО</button>
+					<a href="#" class="popside__favorite"><span class="popside__favicon"></span>избранное</a>
+					<div class="popside__login"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- cooperate -->
+
+	<div class="popside popside-cooperate">
+		<button class="popside__close" data-close>
+			<img src="img/icons/close-white.svg" alt="close">
+		</button>
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__coopbody coopbody">
+					<h3 class="coopbody__title">
+						Выберите тип сотрудничества
+					</h3>
+					<div class="coopbody__items">
+						<a href="#" class="coopbody__item">
+							ФРАНШИЗА
+						</a>
+						<a href="#" class="coopbody__item">
+							ОПТ
+						</a>
+						<a href="#" class="coopbody__item">
+							ПО РЕКЛАМЕ
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- =================== catmenu ================================== -->
+
+	<div class="popside popside-catmenu">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<button class="popside__close" data-close>
+					<img src="img/icons/close.svg" alt="close">
+					<span>закрыть</span>
+				</button>
+				<div class="popside__items popside-catmenu__items">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ============================ fast view ======================================== -->
+
+	<div class="popside popside-quickview">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<button class="popside__close" data-close>
+					<img src="img/icons/close.svg" alt="close">
+				</button>
+				<div class="popside-quickview__body">
+					<div class="popside-quickview__imgs">
+						<button type="button" class="popside-quickview__btn-slider popside-quickview__btn-prev">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+								<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#ff0404" opacity="1" fill-rule="evenodd" />
+							</svg>
+						</button>
+						<div class="popside-quickview__slider swiper">
+							<div class="popside-quickview__wrapper swiper-wrapper">
+								<div class="popside-quickview__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/mob/1.webp" type="image/webp"><img src="img/main/main-slider/mob/1.jpg" alt=""></picture>
+								</div>
+								<div class="popside-quickview__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/mob/2.webp" type="image/webp"><img src="img/main/main-slider/mob/2.jpg" alt=""></picture>
+								</div>
+								<div class="popside-quickview__slide swiper-slide">
+									<picture><source srcset="img/main/main-slider/mob/3.webp" type="image/webp"><img src="img/main/main-slider/mob/3.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="popside-quickview__btn-slider popside-quickview__btn-next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+								<path d="M10.722 4.293c-.394-.39-1.032-.39-1.427 0-.393.39-.393 1.03 0 1.42l11.283 10.28-11.283 10.29c-.393.39-.393 1.02 0 1.42.395.39 1.033.39 1.427 0l12.007-10.94c.21-.21.3-.49.284-.77.014-.27-.076-.55-.286-.76L10.72 4.293z" fill="#ff0404" opacity="1" fill-rule="evenodd" />
+							</svg>
+						</button>
+						<a href="#" class="popside-quickview__detailed">
+							Подробнее о товаре
+						</a>
+					</div>
+					<div class="popside-quickview__indicators">
+						<a href="#" class="popside-quickview__title">
+							Чехол защитный противоударный для iPhone 12/12 Pro X-ONE DropGuard PRO с текстурированным
+							прозрачным корпусом пепельного оттенка
+						</a>
+						<div class="popside-quickview__estimation">
+							<div class="item-catalog__star-rating" role="img" aria-label="Оценка 4.50 из 5">
+								<span style="width:90%">
+									Оценка
+									<strong class="item-catalog__rating">4.50</strong>
+									из 5
+								</span>
+							</div>
+							<p class="popside-quickview__reviewscount">
+								(<span>3</span> отзыва клиентов)
+							</p>
+						</div>
+						<div class="popside-quickview__price">
+							2800 ₽
+						</div>
+						<div class="item-catalog__bottom">
+							<div class="item-catalog__qty quantity">
+								<button class="quantity__button quantity__button_minus"></button>
+								<div class="quantity__input">
+									<input type="number" value="1">
+								</div>
+								<button class="quantity__button quantity__button_plus"></button>
+							</div>
+							<a href="#" class="item-catalog__tocart tocart-btn">
+								<span class="tocart-btn__txt">В корзину</span>
+								<span class="tocart-btn__cart"></span>
+							</a>
+						</div>
+						<div class="popside-quickview__description">
+							<p>
+								X-ONE эксперт в защите экрана — аксессуары премиум класса.
+							</p>
+							<p>
+
+								Чехол противоударный X-ONE DropGuard PRO с текстурированным прозрачным корпусом
+								изготовленный из материалов премиум класса термопластичного полиуретана и поликарбоната
+								импортируемых из Японии.
+							</p>
+							<p>
+
+								Уникальные защитные свойства, материалы и технологии X-ONE:
+							</p>
+							<p>
+
+								Edge Guard — специальные выступы по краям экрана и камеры, не позволяют смартфону упасть
+								задев край экрана при соприкосновении с плоской поверхностью и защищают от 70% случаев
+								повреждений, а пропорции ширины, высоты и веса направляют инерцию падений на место выступа.
+							</p>
+							<p>
+
+								DNA- воздушные отсеки с фирменной конструкцией на углах, эффективно поглощают и рассеивают
+								силу удара при падении с высоты до 3-х метров, более, чем на 98%.
+							</p>
+							<p>
+
+								Nut Matrix Guard технология ударопоглощающей структуры, гасит 90% силы удара по корпусу и
+								равномерно ее распределяет — защищает матрицу, шлейфы и соединения от микроразрывов и
+								сотрясений.
+							</p>
+							<p>
+
+								Dot Matrix — позволяет наслаждаться оригинальной красотой драгоценного смартфона без
+								пожелтения задней панели. Благодаря полимерным премиум материалам корпус сверх прочный, но
+								при этом легкий и гибкий.
+							</p>
+						</div>
+						<div class="popside-quickview__compl">
+							<span>Комплектация: </span>
+							<p> Чехол | Фирменная упаковка.</p>
+						</div>
+						<div class="popside-quickview__stock">
+							<span></span>
+							144 в наличии
+						</div>
+						<div class="item-catalog__bottom">
+							<div class="item-catalog__qty quantity">
+								<button class="quantity__button quantity__button_minus"></button>
+								<div class="quantity__input">
+									<input type="number" value="1">
+								</div>
+								<button class="quantity__button quantity__button_plus"></button>
+							</div>
+							<a href="#" class="item-catalog__tocart tocart-btn">
+								<span class="tocart-btn__txt">В корзину</span>
+								<span class="tocart-btn__cart"></span>
+							</a>
+						</div>
+						<div class="popside-quickview__bottom">
+							<div class="popside-quickview__sku">
+								<span>
+									Артикул:
+								</span>
+								<a href="#">
+									102DGPIP023
+								</a>
+							</div>
+							<div class="popside-quickview__cat">
+								<span>
+									Категория:
+								</span>
+								<a href="#">
+									DropGuard PRO
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ============================ popside cart ======================================== -->
+
+	<div class="popside popside-cart">
+		<div class="popside__wrapper">
+			<div class="popside__body">
+				<div class="popside__top">
+					<h3 class="popside__title">
+						КОРЗИНА
+					</h3>
+					<button class="popside__close" data-close>
+						<img src="img/icons/close.svg" alt="close">
+						<span>закрыть</span>
+					</button>
+				</div>
+				<div class="popside-cart__items overflow-scroll">
+					<div class="popside-cart__item">
+						<button class="popside-cart__del">
+						</button>
+						<a href="#" class="popside-cart__link">
+							<div class="popside-cart__img">
+								<picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt=""></picture>
+							</div>
+							<div class="popside-cart__info">
+								<p class="popside-cart__name">
+									Непробиваемая броня телефона iPhone 12/12 Pro защитная противоударная бронепленка X-ONE
+									Extreme Shock Eliminator 4rd-generation
+								</p>
+								<div class="popside-cart__quantity">
+									<div class="popside-cart__count">
+										2
+									</div>
+									<span>
+										×
+									</span>
+									<div class="popside-cart__price">
+										2300 ₽
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="popside-cart__bottom">
+					<div class="popside-cart__subtotal">
+						<b>
+							ПОДЫТОГ:
+						</b>
+						<span>
+							6900 ₽
+						</span>
+					</div>
+					<a href="#" class="popside-cart__tocart">
+						Просмотр корзины
+					</a>
+					<a href="#" class="popside-cart__toorder">
+						Оформление заказа
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230615173131"></script>
+</body>
+
+</html>
